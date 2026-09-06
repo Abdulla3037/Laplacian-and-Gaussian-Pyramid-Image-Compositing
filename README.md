@@ -71,7 +71,7 @@ jupyter notebook Laplacian_and_Gaussian_Pyramid.ipynb
 (Or open it directly in JupyterLab / VS Code / Google Colab.)
 
 **Step 3: Run all cells**
-Run the notebook top to bottom. It reads the source images from the `Image-Pyramid-Blending-Dip/` folder and saves its blended results back into that same folder.
+Run the notebook top to bottom. It reads the source images from the `Images/` folder and saves its blended results back into that same folder.
 
 ---
 
