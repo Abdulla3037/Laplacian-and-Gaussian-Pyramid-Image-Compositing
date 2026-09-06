@@ -19,25 +19,18 @@ Image blending and compositing using Gaussian and Laplacian pyramids decomposes 
 | 9 | [Key Insights](#-key-insights) |
 | 10 | [Contributing](#-contributing) |
 | 11 | [License](#-license) |
-| 12 | [Contact](#-contact) |
-
----
-
-## 📄 Project Overview
-
-This project implements the classic **Burt–Adelson pyramid blending** technique entirely from scratch — no OpenCV pyramid functions used. It builds Gaussian and Laplacian pyramids by hand, blends them using a mask pyramid, and reconstructs a seamless composite image, demonstrated across five different image pairs.
 
 ---
 
 ## 🎯 Features
 
-- ✅ Custom Gaussian pyramid construction (progressive downsampling + blur)
-- ✅ Custom Laplacian pyramid construction (high-frequency detail extraction)
-- ✅ Binary and soft-alpha mask support, each with its own Gaussian pyramid
-- ✅ Level-by-level pyramid blending using the mask pyramid
-- ✅ Full image reconstruction from the blended pyramid
-- ✅ Verified numerically — near-zero reconstruction error on the original round trip
-- ✅ Works on any image size, including non-power-of-two dimensions
+- Custom Gaussian pyramid construction (progressive downsampling + blur)
+- Custom Laplacian pyramid construction (high-frequency detail extraction)
+- Binary and soft-alpha mask support, each with its own Gaussian pyramid
+- Level-by-level pyramid blending using the mask pyramid
+- Full image reconstruction from the blended pyramid
+- Verified numerically near-zero reconstruction error on the original round trip
+- Works on any image size, including non-power-of-two dimensions
 
 ---
 
@@ -46,7 +39,7 @@ This project implements the classic **Burt–Adelson pyramid blending** techniqu
 Pyramid blending avoids the harsh seams of a naive alpha blend by blending at multiple frequency bands separately.
 
 - **Step 1:** Build a Gaussian pyramid for each source image (repeated blur + downsample).
-- **Step 2:** Derive each image's Laplacian pyramid — the detail lost between consecutive Gaussian levels.
+- **Step 2:** Derive each image's Laplacian pyramid the detail lost between consecutive Gaussian levels.
 - **Step 3:** Build a Gaussian pyramid of the composite mask (binary or soft alpha).
 - **Step 4:** Blend the two Laplacian pyramids at every level, weighted by the mask's Gaussian pyramid at that level: `blended = mask * L_a + (1 - mask) * L_b`.
 - **Step 5:** Collapse the blended pyramid back into a single image by progressively upsampling and adding each Laplacian level.
@@ -62,25 +55,6 @@ Pyramid blending avoids the harsh seams of a naive alpha blend by blending at mu
 | 3 | Black Panther & Tiger | Vertical split, binary mask |
 | 4 | Fox & Cat | Horizontal split, binary mask |
 | 5 | Airplane & Ocean | Object compositing, soft alpha mask |
-
----
-
-## 📁 Project Structure
-
-```
-├── Laplacian_and_Gaussian_Pyramid.ipynb   # main notebook (repo root)
-├── LICENSE
-├── README.md
-└── Image-Pyramid-Blending-Dip/            # source images + saved outputs
-    ├── tiger.png, bear.png
-    ├── Coffee.png, Tea.png
-    ├── black_panther.png, Tigerim.png
-    ├── fox.png, orange_cat.png
-    ├── ocean.webp, airplane_cutout.png, airplane_mask.png
-    └── airplane_over_ocean.png            # saved output
-```
-
-> **Note:** the notebook reads all images from the `Image-Pyramid-Blending-Dip/` folder (e.g. `Image-Pyramid-Blending-Dip/tiger.png`), so keep that folder alongside the notebook.
 
 ---
 
