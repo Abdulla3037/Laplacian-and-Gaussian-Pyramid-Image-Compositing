@@ -12,13 +12,12 @@ Image blending and compositing using Gaussian and Laplacian pyramids decomposes 
 | 2 | [Features](#-features) |
 | 3 | [How the Algorithm Works](#-how-the-algorithm-works) |
 | 4 | [Examples Included](#-examples-included) |
-| 5 | [Project Structure](#-project-structure) |
-| 6 | [How to Run](#-how-to-run) |
-| 7 | [Key Functions](#-key-functions) |
-| 8 | [Requirements](#-requirements) |
-| 9 | [Key Insights](#-key-insights) |
-| 10 | [Contributing](#-contributing) |
-| 11 | [License](#-license) |
+| 5 | [How to Run](#-how-to-run) |
+| 6 | [Key Functions](#-key-functions) |
+| 7 | [Requirements](#-requirements) |
+| 8 | [Key Insights](#-key-insights) |
+| 9 | [Contributing](#-contributing) |
+| 10 | [License](#-license) |
 
 ---
 
