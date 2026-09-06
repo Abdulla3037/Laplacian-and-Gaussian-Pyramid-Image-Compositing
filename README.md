@@ -1,1 +1,1 @@
-# -Laplacian-and-Gaussian-Pyramid-Image-Compositing-
+# Laplacian-and-Gaussian-Pyramid-Image-Compositing
