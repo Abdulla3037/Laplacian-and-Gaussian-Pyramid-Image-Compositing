@@ -114,12 +114,12 @@ Have ideas or improvements? Feel free to fork the repository, apply your changes
 
 ---
 
-## 🔒 License
+## 🔐 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](./LICENSE).
 
 ---
 
-## 📬 Contact
+## ✉️ Contact
 
-For any questions or concerns, feel free to reach out.
+For any questions or concerns, feel free to reach out by email at abdullahasan220618@gmail.com
