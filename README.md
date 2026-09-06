@@ -1,4 +1,4 @@
-# 🖼️ Image Pyramid Blending: Gaussian & Laplacian Compositing
+# 🖼️ Laplacian and Gaussian Pyramid: Image Compositing
 
 Image blending and compositing using Gaussian and Laplacian pyramids decomposes each image into multiple frequency bands and blends them separately at each scale, instead of stitching two images together with a hard edge. This produces smooth, seamless transitions with no visible seam, even between images with very different colors and textures.
 
