@@ -100,10 +100,10 @@ Run the notebook top to bottom. It reads the source images from the `Images/` fo
 
 ## 💡 Key Insights
 
-- **Reconstruction is lossless in practice** : near-zero mean absolute error between the original image and its Gaussian → Laplacian → reconstructed round trip, confirming the pyramid math (especially the ×4 energy compensation during upsampling) is implemented correctly.
-- **Blending at multiple scales beats blending at one** : a naive pixel-wise blend produces a visible hard edge at the mask boundary, while pyramid blending hides that seam by blending low frequencies (color/lighting) more broadly and high frequencies (edges/texture) more locally.
-- **The mask doesn't need to be binary** : the Airplane & Ocean example uses a soft alpha mask instead of a hard 0/1 split, showing the same pipeline generalizes to arbitrary object compositing, not just simple half-and-half blends.
-- **Image size doesn't need to be a power of two** : the pyramid functions handle odd dimensions correctly by tracking exact shapes at each level during both downsampling and upsampling.
+- **Reconstruction is lossless in practice** : Near-zero mean absolute error between the original image and its Gaussian → Laplacian → reconstructed round trip, confirming the pyramid math is implemented correctly.
+- **Blending at multiple scales beats blending at one** : A naive pixel-wise blend produces a visible hard edge at the mask boundary, while pyramid blending hides that seam by blending low frequencies (color/lighting) more broadly and high frequencies (edges/texture) more locally.
+- **The mask doesn't need to be binary** : The Airplane & Ocean example uses a soft alpha mask instead of a hard 0/1 split, showing the same pipeline generalizes to arbitrary object compositing, not just simple half-and-half blends.
+- **Image size doesn't need to be a power of two** : The pyramid functions handle odd dimensions correctly by tracking exact shapes at each level during both downsampling and upsampling.
 
 ---
 
