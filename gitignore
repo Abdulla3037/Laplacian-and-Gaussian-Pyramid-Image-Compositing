@@ -1,0 +1,49 @@
+## ── Jupyter ──────────────────────────────────────────────────
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+## ── Python ───────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+*.egg
+.eggs/
+
+## ── Virtual environments ────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+
+## ── Generated outputs from this notebook ────────────────────
+## The notebook writes result images to the repo root at runtime
+## (save_rgb(...)) — these are generated, not source, so ignore
+## them. Pictures/ is NOT ignored — it holds the source images
+## (tiger.png, bear.png, ocean.webp, etc.) the notebook needs.
+/blended_result.png
+/airplane_over_ocean.png
+*_result.png
+*_output.png
+
+## ── Jupyter / IPython config & kernels ──────────────────────
+.ipython/
+profile_default/
+ipython_config.py
+
+## ── Editor / IDE ────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+## ── OS files ─────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+## ── Misc ─────────────────────────────────────────────────────
+*.log
+*.tmp
+*.bak
